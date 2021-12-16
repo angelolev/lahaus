@@ -58,7 +58,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
+    max-width: 312px;
     position: relative;
 
     @include breakpoint($sm) {
@@ -75,6 +75,10 @@
     position: relative;
     transition: all 0.3s;
     cursor: pointer;
+
+    .overlay {
+      display: none;
+    }
 
     &:not(:first-child) {
       margin-left: -20px;
@@ -95,6 +99,12 @@
 
       & ~ .list__image-container {
         transform: translateX(10px);
+      }
+    }
+
+    &:last-child {
+      .overlay {
+        display: block;
       }
     }
   }

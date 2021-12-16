@@ -8,6 +8,9 @@ const List = ({ id, title, savedItems, images }) => {
           {images.map((img) => {
             return (
               <div key={img.id} className="list__image-container">
+                <div className="overlay">
+                  <p>+{savedItems}</p>
+                </div>
                 <img className="list__image" src={img.src} alt={img.name} />
               </div>
             );
