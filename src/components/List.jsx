@@ -8,7 +8,7 @@ const List = ({ id, title, savedItems, images }) => {
           {images.map((img) => {
             return (
               <div key={img.id} className="list__image-container">
-                <img className="list__image" src={img.src} alt="Image Alt" />
+                <img className="list__image" src={img.src} alt="my picture" />
               </div>
             );
           })}
