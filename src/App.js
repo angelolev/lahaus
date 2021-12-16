@@ -1,6 +1,5 @@
 import Nav from "./components/Nav";
 import "./styles.scss";
-import favorites from "./assets/new-list.png";
 import List from "./components/List";
 import testImage from "./assets/test.jpg";
 import globos from "./assets/globos.jpg";
