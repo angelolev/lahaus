@@ -21,8 +21,10 @@ const Nav = (props) => {
           <img className="hidden-xs" src={logoSm} alt="Logo sm" />
         </div>
       </div>
-      <ul className="nav__links fadeIn" id="navMenu" onClick={toggleMenu}>
-        <button id="navClose">X</button>
+      <ul className="nav__links fadeIn" id="navMenu">
+        <button id="navClose" onClick={toggleMenu}>
+          X
+        </button>
         <li>
           <a href="/cundinamarca">Cundinamarca</a>
         </li>
