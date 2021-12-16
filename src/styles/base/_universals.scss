@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+a,
+button {
+  text-decoration: none;
+  color: $fontPrimaryColor;
+}
+
+button {
+  border: none;
+  background: transparent;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px 33px;
+  padding: 32px 24px 50px;
+  max-width: 1110px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  h1 {
+    font-size: 22px;
+    font-weight: 600;
+    color: $fontPrimaryColor;
+    line-height: 32px;
+    text-align: center;
+  }
+}
+
+.app {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+//Commons
+.hidden-xs {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.hidden-sm {
+  display: block;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+//Animations
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s;
+}
