@@ -1,3 +1,4 @@
+//Resets
 * {
   box-sizing: border-box;
   margin: 0;
@@ -28,6 +29,7 @@ ul {
   margin: 0;
 }
 
+//Globals
 main {
   display: grid;
   grid-template-columns: 1fr;
@@ -36,7 +38,7 @@ main {
   max-width: 1110px;
   margin: 0 auto;
 
-  @media (min-width: 768px) {
+  @include breakpoint($sm) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
@@ -58,7 +60,7 @@ main {
 .hidden-xs {
   display: none;
 
-  @media (min-width: 768px) {
+  @include breakpoint($sm) {
     display: block;
   }
 }
@@ -66,9 +68,19 @@ main {
 .hidden-sm {
   display: block;
 
-  @media (min-width: 768px) {
+  @include breakpoint($sm) {
     display: none;
   }
+}
+
+.notifications {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  background-color: $green;
+  right: -6px;
 }
 
 //Animations

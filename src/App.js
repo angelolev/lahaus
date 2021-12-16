@@ -4,7 +4,7 @@ import List from "./components/List";
 import testImage from "./assets/test.jpg";
 import globos from "./assets/globos.jpg";
 import lago from "./assets/lago.jpg";
-import newList from "./assets/new-list.png";
+import NewList from "./components/NewList";
 
 function App() {
   const fakeItems = [
@@ -105,15 +105,7 @@ function App() {
         {fakeItems.map((item) => {
           return <List key={item.id} {...item} />;
         })}
-        <article className="list">
-          <div className="list__gallery list__gallery--new-list">
-            <img src={newList} alt="New list" />
-            <i className="icon icon-plus"></i>
-          </div>
-          <div className="list__title">
-            <h2>Crear nueva lista</h2>
-          </div>
-        </article>
+        <NewList />
       </main>
     </div>
   );

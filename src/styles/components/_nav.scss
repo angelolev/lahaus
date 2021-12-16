@@ -11,17 +11,19 @@
     align-items: center;
 
     &-burguer {
+      position: relative;
+
       .icon {
         font-size: 32px;
       }
 
-      @media (min-width: 768px) {
+      @include breakpoint($sm) {
         display: none;
       }
     }
 
     &-logo {
-      margin-left: 5px;
+      margin-left: 8px;
     }
   }
 
@@ -30,7 +32,7 @@
     display: none;
     background-color: $green;
 
-    @media (min-width: 768px) {
+    @include breakpoint($sm) {
       display: flex;
       background-color: transparent;
     }
@@ -54,7 +56,7 @@
       right: 0;
       padding: 10px 20px;
 
-      @media (min-width: 768px) {
+      @include breakpoint($sm) {
         display: none;
       }
     }
@@ -63,16 +65,31 @@
       width: 100%;
       padding: 20px;
 
+      .icon {
+        font-size: 8px;
+        position: relative;
+        margin-left: 5px;
+
+        .notifications {
+          top: -12px;
+          right: -10px;
+        }
+      }
+
       &:first-of-type {
         margin-top: 40px;
       }
 
-      @media (min-width: 768px) {
+      @include breakpoint($sm) {
         width: auto;
         padding: 10px;
 
         &:first-of-type {
           margin-top: 0;
+        }
+
+        &:last-child {
+          cursor: pointer;
         }
       }
     }

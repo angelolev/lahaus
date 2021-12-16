@@ -1,4 +1,5 @@
 .list {
+  $self: &;
   margin: 0 auto;
   max-width: 100%;
 
@@ -6,12 +7,32 @@
     max-width: 290px;
   }
 
-  @media (min-width: 768px) {
+  @include breakpoint($sm) {
     max-width: 100%;
   }
 
+  &--new-list {
+    cursor: pointer;
+
+    #{ $self }__gallery {
+      .icon {
+        font-size: 50px;
+        position: absolute;
+      }
+    }
+
+    #{ $self }__title {
+      text-align: center;
+
+      h2 {
+        color: $skyblue;
+        font-weight: 500;
+      }
+    }
+  }
+
   &__header {
-    @media (min-width: 768px) {
+    @include breakpoint($sm) {
       grid-column-start: span 3;
     }
   }
@@ -40,17 +61,8 @@
     max-width: 100%;
     position: relative;
 
-    @media (min-width: 768px) {
+    @include breakpoint($sm) {
       max-width: 293px;
-    }
-
-    &--new-list {
-      cursor: pointer;
-
-      .icon {
-        font-size: 50px;
-        position: absolute;
-      }
     }
   }
 
