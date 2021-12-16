@@ -16,14 +16,17 @@ function App() {
         {
           id: 1,
           src: testImage,
+          name: "test",
         },
         {
           id: 2,
           src: globos,
+          name: "globos",
         },
         {
           id: 3,
           src: lago,
+          name: "lago",
         },
       ],
     },
@@ -35,14 +38,17 @@ function App() {
         {
           id: 4,
           src: testImage,
+          name: "test",
         },
         {
           id: 5,
           src: globos,
+          name: "globos",
         },
         {
           id: 6,
           src: lago,
+          name: "lago",
         },
       ],
     },
@@ -54,14 +60,17 @@ function App() {
         {
           id: 7,
           src: testImage,
+          name: "test",
         },
         {
           id: 8,
           src: globos,
+          name: "globos",
         },
         {
           id: 9,
           src: lago,
+          name: "lago",
         },
       ],
     },
@@ -98,7 +107,7 @@ function App() {
         })}
         <article className="list">
           <div className="list__gallery list__gallery--new-list">
-            <img src={newList} alt="my picture" />
+            <img src={newList} alt="New list" />
             <i className="icon icon-plus"></i>
           </div>
           <div className="list__title">

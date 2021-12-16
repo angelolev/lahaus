@@ -15,8 +15,8 @@ const Nav = (props) => {
           <i className="icon icon-menu" onClick={toggleMenu}></i>
         </div>
         <div className="nav__icons-logo">
-          <img className="hidden-sm" src={logoXs} alt="my picture" />
-          <img className="hidden-xs" src={logoSm} alt="my picture" />
+          <img className="hidden-sm" src={logoXs} alt="Logo xs" />
+          <img className="hidden-xs" src={logoSm} alt="Logo sm" />
         </div>
       </div>
       <ul className="nav__links fadeIn" id="navMenu" onClick={toggleMenu}>
