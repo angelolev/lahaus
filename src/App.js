@@ -98,7 +98,7 @@ function App() {
         })}
         <article className="list">
           <div className="list__gallery list__gallery--new-list">
-            <img src={newList} alt="" />
+            <img src={newList} alt="Image Alt" />
             <i className="icon icon-plus"></i>
           </div>
           <div className="list__title">
